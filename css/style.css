@@ -1,0 +1,105 @@
+.featured-item {
+    text-rendering: optimizeLegibility;
+}
+
+.featured-product .featured-product-bgimage {
+    position: absolute;
+    left: 50%;
+    margin-left: -1050px;
+    top: 0;
+    min-width: 100%;
+}
+.featured-product {
+    position: absolute;
+    display: block;
+    z-index: 3;
+    overflow: hidden;
+    width: 110%;
+    height: 600px;
+    padding-top: 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #333333;
+    background-color: #000000;
+}
+
+/*.img-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+
+.featured-product .featured-product-bgimage {
+    position: absolute;
+    left: 50%;
+    margin-left: -1050px;
+    top: 0;
+}
+.header {
+    position: relative;
+    width: 100%;
+
+}
+.gh-shop-logo-fill {
+    fill: white;
+}
+
+.navbar {
+    position: absolute;
+    background: transparent;
+    left: 14%;
+    width: 920px;
+    z-index: 6;
+
+}
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+#btn-cart {
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 5.5em;
+    border-radius: 5px;
+    transition: all 1s;
+    margin-left: 10px;
+
+
+
+}
+.cart-count, .cart-text {
+    padding: 1px;
+}
+.cart-count {
+    font-size: 20px;
+    padding: 0px;
+    
+    margin: 0px;
+}
+
+.cart-text {
+    border-top: 1px solid black;
+    font-size: 10px;
+}
+.cart-count:hover ~ .cart-text {
+    color: white;
+    background: #4183c4;
+}
+.cart-text:hover {
+    color: white;
+    background: #4183c4;
+}
+#btn-cart:hover {
+    border: 1px solid #4183c4;
+}
+.container-fluid {
+    padding: 0;
+}
