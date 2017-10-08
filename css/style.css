@@ -53,28 +53,31 @@
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding-top: 0; 
+    margin:0;
+    padding:0;
+    height: 100%;
 }
 
-.header {
-    position: relative;
+.container-fluid {
+    position:relative;
+    padding: 0;
+    min-height: 100%
 }
 
 .navbar {
-   position: absolute;
-   width: 80%;
-   margin: 0 auto;
+ position: absolute;
+ width: 80%;
+ margin: 0 auto;
 }
-
 
 .fa-bars {
     color:white;
 }
- .jumbotron {
+
+.jumbotron {
     background: url(../img/decal.jpg) no-repeat center center;
     background-size: cover;
-    height: 600px;
-    
+    height: 600px; 
 } 
 
 #btn-cart {
@@ -105,8 +108,6 @@ body {
     border-top: 1px solid white;
     font-size: 10px;
 
-
-
 }
 .cart-count:hover ~ .cart-text {
     color: white;
@@ -123,7 +124,28 @@ body {
 }
 .content {
     width: 945px;
+    padding-bottom: 60px;
+    margin: 0 auto;
 }
 .card {
     margin-top: 30px;
+
+}
+
+.content-about {
+    width: 945px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #636363;
+    padding: 30px 0 28px;
+    border-top: 1px solid #eeeeee;
+    font-weight: 300;
 }
