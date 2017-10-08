@@ -55,17 +55,65 @@
     </div>
     <br><br><br>
     <!-- content -->
-    <div class="container content-about">
+    <div class="content container">
       <div class="row">
-        <div class="col-6">
-          <h1>About Us</h1>
-          <p>We’re GitHub! If you’re ordering something from us, you probably know that this isn’t the main gig. Please enjoy our cheeky items and be sure to check back periodically for new stuff.</p>
-          <p>We've put the finest merchandise relocation experts in charge of getting you your swag. Fear not! You are in good hands.</p>
-          <p>Love and coding,</p>
-          <p>The GitHub Team</p>
+        <div class="col">
+          <form class="cart-form">
+            <div class="form-group">
+              <div class="cart-header">
+                <h3 id="cart-title"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</h3>
+                <a href="#" class="continue">continue shop</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <table class="table">              
+                <tbody>
+                  <tr>
+                    <td ">
+                      <a href="#">
+                        <img class="float-left img-product" src="https://cdn.shopify.com/s/files/1/0051/4802/products/Chloe-Jackman-Photography-Github-Back-to-school-2017-30_33d6ad85-6654-4fcb-a8d5-4597732a68c8_1024x1024.jpg?v=1503342773" alt="">
+                      </a>
+                    </td>
+                    <td>
+                      <h4 class="product-name"><a href="#">GitHub Bundle - Linear/Men's Small</a></h4>
+                      <p class="product-variant">Linear/Men's Small</p>
+                    </td>
+                    <td class="qty">
+                      <div>
+                        <span class="product-price"><span class="currency-symbol">$</span>55 <span class="mult">x</span></span> <input type="text" size="4" name="updates[41587959888]" id="updates_41587959888" value="1" onfocus="this.select();">
+                        <a href="#" onclick="remove_item(41587959888); return false;" class="btn remove btn-oldstyle">Remove</a>
+                      </div>
+                    </td>
+                  </tr> 
+                  <tr class="note">
+                    <td colspan="3">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Leave a note (optional)"></textarea>
+                    </td>
+                  </tr>
+                  <tr class="cart-update">
+                    <td colspan="3">
+                      Made any changes? <a href="#" onclick="go(); return false;" class="btn btn-update btn-oldstyle">Update Cart</a>
+                    </td>
+                  </tr>
+                  <tr class="cart-checkout">
+                    <td colspan="3">
+                      <div>
+                        <span class="price-cart"><span class="label">Total $</span>5.00</span>
+                        <a href="/checkout" onclick="go(); return true;" name="checkout" class="btn btn-checkout btn-oldstyle">Checkout</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
         </div>
-        <div class="col-6 package-img">
-          <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0051/4802/t/83/assets/package.jpg">
+
+        <div class="col-3">
+          <h3>Prefer Paypal?</h3>
+          <hr>
+          <p>Checkout with Paypal using the button below.</p>
+          <button name="goto_pp" type="submit" id="paypal-express-button" class="additional-checkout-button additional-checkout-button--paypal-express" value="paypal_express" data-strategy="cart"><img alt="Checkout with: PayPal" src="http://cdn.shopify.com/s/assets/checkout/easy-checkout-btn-paypal-9835af2c2b0e2a543b2905789a7f08b678d62de2c77c1b0d16fd7689aff463f3.png"></button>
         </div>
       </div>
     </div>
