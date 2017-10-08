@@ -84,8 +84,8 @@ html, body {
 } 
 
 #btn-cart {
-    color: #1974FF;
-    border: 1px solid  #1974FF;
+    color: white;
+    border: 1px solid  white;
     text-decoration: none;
     text-align: center;
     display: block;
@@ -103,12 +103,12 @@ html, body {
 .cart-count {
     font-size: 20px;
     padding: 0px;
-    color: #1974FF;
+    color: white;
     margin: 0px;
 }
 
 .cart-text {
-    border-top: 1px solid #1974FF;
+    border-top: 1px solid white;
     font-size: 10px;
 
 }
@@ -167,7 +167,7 @@ html, body {
 
 .paddingBar {
     padding-bottom: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #eee;
 }
 
 .price {
