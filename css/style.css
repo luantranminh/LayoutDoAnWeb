@@ -224,6 +224,8 @@ html, body {
     border-radius: 5px 5px 0 0;
 }
 
+
+
 #cart-title {
     display: block;
     position: relative;
@@ -267,6 +269,10 @@ html, body {
     line-height: 44px !important;
     text-align: center !important;
     background-color: #ffc439 !important
+}
+
+#form-group-header {
+    margin: 0;
 }
 
 tr {
