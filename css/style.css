@@ -63,7 +63,9 @@ body {
     padding: 0;
     min-height: 100%
 }
-
+.navbar-brand, .nav-link {
+    color: red;
+}
 .navbar {
  position: absolute;
  width: 80%;
@@ -72,7 +74,7 @@ body {
 }
 
 .fa-bars {
-    color:white;
+    color:#1974FF;
 }
 
 .jumbotron {
@@ -82,8 +84,8 @@ body {
 } 
 
 #btn-cart {
-    color: white;
-    border: 1px solid white;
+    color: #1974FF;
+    border: 1px solid  #1974FF;
     text-decoration: none;
     text-align: center;
     display: block;
@@ -101,12 +103,12 @@ body {
 .cart-count {
     font-size: 20px;
     padding: 0px;
-    
+    color: #1974FF;
     margin: 0px;
 }
 
 .cart-text {
-    border-top: 1px solid white;
+    border-top: 1px solid #1974FF;
     font-size: 10px;
 
 }
@@ -122,7 +124,7 @@ body {
 }
 
 .content {
-    width: 945px;
+    
     padding-bottom: 60px;
     margin: 0 auto;
 }
@@ -132,7 +134,7 @@ body {
 }
 
 .content-about {
-    width: 945px;
+    
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
