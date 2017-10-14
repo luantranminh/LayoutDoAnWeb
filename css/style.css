@@ -152,3 +152,14 @@ body {
     border-top: 1px solid #eeeeee;
     font-weight: 300;
 }
+
+.text-checkout{
+    color: #2b9fb8;
+    font-size: 15px;
+    vertical-align: middle;
+    float: right;
+}
+.text-info-checkout{
+    font-size: 15px;
+    float: right;
+}
