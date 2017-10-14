@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#about.html">About<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="help.html">Help</a>
@@ -51,42 +51,57 @@
       </nav>
     </div>
     <br><br><br>
+
+
     <!-- content -->
-    <div class="container content-about">
+    <div class="content-item">
+      <header class="content-header">
+        <h1 class="product-title">Octocat</h1>
+        <p class="price">20.000d</p>
+      </header>
       <div class="row">
-        <div class="col-6">
-          <h1>About Us</h1>
-          <p>We’re GitHub! If you’re ordering something from us, you probably know that this isn’t the main gig. Please enjoy our cheeky items and be sure to check back periodically for new stuff.</p>
-          <p>We've put the finest merchandise relocation experts in charge of getting you your swag. Fear not! You are in good hands.</p>
-          <p>Love and coding,</p>
-          <p>The GitHub Team</p>
+
+        <div class="col-8">
+          <img src="img/item1.jpg" class="img-thumbnail detail" alt="...">
+          <img src="img/item2.jpg" class="img-thumbnail detail" alt="...">
+          <img src="img/item1.jpg" class="img-thumbnail detail" alt="...">
         </div>
-        <div class="col-6 package-img">
-          <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0051/4802/t/83/assets/package.jpg">
-        </div>
+        <div class="col-4">
+         <select class="custom-select">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Add to cart" class="btn btn-add">
+        <p class="extra-content">Our fearless Questocat can always be by your side with this vintage game-inspired tee. From merging old pull requests to exploring new lands, you'll always be ready to commit to adventure.</p>
+        <p class="extra-content">This Next Level 60/40 poly-cotton blend shirt is available in both fitted and linear cuts.</p>
       </div>
     </div>
-
-    <!-- footer -->
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </nav>
   </div>
+
+  <!-- footer -->
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
+  <script src="js/script.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
