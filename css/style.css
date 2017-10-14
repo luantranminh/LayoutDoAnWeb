@@ -248,8 +248,19 @@ html, body {
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: 300;
-    letter-spacing: 0;
-    font-size: 1.17em;
+}
+
+.text-checkout{
+    color: #2b9fb8;
+    font-size: 15px;
+    vertical-align: middle;
+    float: right;
+}
+.text-info-checkout{
+    font-size: 15px;
+    float: right;
+   /* letter-spacing: 0;
+    font-size: 1.17em;*/ 
 
 }
 
@@ -428,5 +439,4 @@ input {
     right: 5%;
     padding-left: 3%;
     border-left: 1px solid rgba(175,175,175,0.34);
-
 }
