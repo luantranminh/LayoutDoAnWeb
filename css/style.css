@@ -65,12 +65,12 @@ html, body {
     min-height: 100%
 }
 .navbar-brand, .nav-link {
-    color: red;
+    color: #F91675;
 }
 .navbar {
- position: absolute;
- width: 80%;
- margin: 0 auto;
+   position: absolute;
+   width: 80%;
+   margin: 0 auto;
 }
 
 
@@ -186,7 +186,7 @@ html, body {
     position: absolute;
     font-size: 20px;
     top: 22px;
-    left: 92%;
+    left: 80%;
 }
 
 .content-header {
@@ -212,6 +212,8 @@ html, body {
     background-color: #28a745;
     color: #fff;
     width: 100%;
+    cursor: pointer;
+    margin: 0;
 }
 
 .extra-content {
@@ -267,7 +269,7 @@ html, body {
     font-size: 15px;
     float: right;
    /* letter-spacing: 0;
-    font-size: 1.17em;*/ 
+   font-size: 1.17em;*/ 
 
 }
 
@@ -351,7 +353,12 @@ tr {
     font-weight: bold;
     color: inherit;
     display: inline-block;
-    padding: 3px 7px 1px;
+    padding: 3px 7px;
+}
+
+.remove:hover {
+    background: #e65146;
+    color: white;
 }
 input {
     margin: 0px 5px;
@@ -370,6 +377,7 @@ input {
     font-weight: bold;
 }
 
+
 .cart-update .btn-update {
     border-radius: 3px;
     border: 1px solid #d4d4d4;
@@ -383,12 +391,21 @@ input {
     padding: 3px 7px 1px;
 }
 
+.btn-update:hover {
+    background: #599bdc;
+    color: white;
+}
+
 .cart-checkout {
     font-size: 19px;
     position: relative;
     overflow: hidden;
     text-align: right;
     font-weight: bold;
+}
+
+.cart-checkout:hover {
+    opacity: 0.8;
 }
 
 .cart-checkout .btn-checkout {
@@ -446,4 +463,9 @@ input {
     right: 5%;
     padding-left: 3%;
     border-left: 1px solid rgba(175,175,175,0.34);
+}
+
+.facebook {
+    position: absolute;
+    right: 0px;
 }
