@@ -50,6 +50,19 @@
 
 }
 */
+@media (max-width: 767px) {
+    #btn-cart {
+        visibility: hidden;
+    }
+
+
+}
+@media (min-width: 767px) {
+
+    #alis-cart {
+        visibility:hidden;
+    }
+}
 
 html, body {
     font-family: 'Roboto', sans-serif;
@@ -72,9 +85,9 @@ p {
     color: #F91675;
 }
 .navbar {
- position: absolute;
- width: 80%;
- margin: 0 auto;
+   position: absolute;
+   width: 80%;
+   margin: 0 auto;
 }
 
 
