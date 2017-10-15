@@ -13,26 +13,11 @@
 
 
 
-	var navbar = document.getElementsByClassName("navbar-toggler");
-
-	navbar[0].addEventListener('click', function() {
-	//some bug :(
-	if(!$(".navbar-collapse").hasClass("show")) {
-		$("#btn-cart").hide();
-	}
-	else
-	{
-		$("#btn-cart").show();
-	}
-
-	document.getElementById("cart-trans").addEventListener("click", handler);
-
-	// handler function
-	function handler(e) {
-	// remove this handler
-	e.target.removeEventListener(e.type, arguments.callee);
-
-	alert("You'll only see this once!");
-}
+$('#navbarsExampleDefault').on('show.bs.collapse', function () {
+  	$("#btn-cart").hide();
 })
+$('#navbarsExampleDefault').on('hide.bs.collapse', function () {
+  	$("#btn-cart").show();
+})
+
 
