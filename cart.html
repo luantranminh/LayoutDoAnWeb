@@ -26,123 +26,131 @@
     <!-- Header -->
     <div class="header">
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="index.html">Dev Store</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+     <!-- Navbar -->
+     <nav class="container content-item navbar navbar-expand-md fixed-top">
+      <a class="navbar-brand" href="index.html">Dev Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
 
-        </button>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="About.html">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="help.html">Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " id="btn-cart" href="#">
-                <div class="cart-count">0</div>
-                <div class="cart-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- End Navbar -->
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">Giới thiệu<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="help.html">Trợ giúp</a>
+          </li>
 
-    </div>
-    <!-- End Header -->
-
-    <!-- content -->
-    <div class="content container">
-      <div class="row">
-
-        <!-- Cart information -->
-        <div class="col">
-          <form class="cart-form">
-            <div class="form-group" id="form-group-header">
-              <div class="cart-header">
-                <h3 id="cart-title"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</h3>
-                <a href="#" class="continue">continue shop</a>
-              </div>
-            </div>
-            <div class="form-group">
-              <table class="table">              
-                <tbody>
-                  <tr>
-                    <td ">
-                      <a href="#">
-                        <img class="float-left img-product" src="https://cdn.shopify.com/s/files/1/0051/4802/products/Chloe-Jackman-Photography-Github-Back-to-school-2017-30_33d6ad85-6654-4fcb-a8d5-4597732a68c8_1024x1024.jpg?v=1503342773" alt="">
-                      </a>
-                    </td>
-                    <td>
-                      <h4 class="product-name"><a href="#">GitHub Bundle - Linear/Men's Small</a></h4>
-                      <p class="product-variant">Linear/Men's Small</p>
-                    </td>
-                    <td class="qty">
-                      <div>
-                        <span class="product-price"><span class="currency-symbol">$</span>55 <span class="mult">x</span></span> <input type="text" size="4" name="updates[41587959888]" id="updates_41587959888" value="1" onfocus="this.select();">
-                        <a href="#" onclick="remove_item(41587959888); return false;" class="btn remove btn-oldstyle">Remove</a>
-                      </div>
-                    </td>
-                  </tr> 
-                  <tr class="note">
-                    <td colspan="3">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Leave a note (optional)"></textarea>
-                    </td>
-                  </tr>
-                  <tr class="cart-update">
-                    <td colspan="3">
-                      Made any changes? <a href="#" onclick="go(); return false;" class="btn btn-update btn-oldstyle">Update Cart</a>
-                    </td>
-                  </tr>
-                  <tr class="cart-checkout">
-                    <td colspan="3">
-                      <div>
-                        <span class="price-cart"><span class="label">Total $</span>5.00</span>
-                        <a href="checkout.html" onclick="go(); return true;" name="checkout" class="btn btn-checkout btn-oldstyle">Checkout</a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </form>
-        </div>
-
-        <!-- Paypal -->
-        <div class="col-3 paypal">
-          <h3>Prefer Paypal?</h3>
-          <hr>
-          <p>Checkout with Paypal using the button below.</p>
-          <button name="goto_pp" type="submit" id="paypal-express-button" class="additional-checkout-button additional-checkout-button--paypal-express" value="paypal_express" data-strategy="cart"><img alt="Checkout with: PayPal" src="http://cdn.shopify.com/s/assets/checkout/easy-checkout-btn-paypal-9835af2c2b0e2a543b2905789a7f08b678d62de2c77c1b0d16fd7689aff463f3.png"></button>
-        </div>
-        <!--End Paypal  -->
-      
+          <li class="nav-item">
+            <a class="nav-link " id="btn-cart" href="cart.html">
+              <div class="cart-count">0</div>
+              <div class="cart-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</div>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <!-- End content -->
-
-    <!-- footer -->
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
     </nav>
-    <!-- End footer -->
+    <!-- End Navbar -->
 
   </div>
+  <!-- End Header -->
+
+  <!-- content -->
+  <div class="content container">
+    <div class="row">
+
+      <!-- Cart information -->
+      <div class="col">
+        <form class="cart-form">
+          <div class="form-group" id="form-group-header">
+            <div class="cart-header">
+              <h3 id="cart-title"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ hàng</h3>
+              <a href="index.html" class="continue">Mua tiếp</a>
+            </div>
+          </div>
+          <div class="form-group">
+            <table class="table">              
+              <tbody>
+                <tr>
+                  <td ">
+                    <a href="#">
+                      <img class="float-left img-product" src="https://cdn.shopify.com/s/files/1/0051/4802/products/Chloe-Jackman-Photography-Github-Back-to-school-2017-30_33d6ad85-6654-4fcb-a8d5-4597732a68c8_1024x1024.jpg?v=1503342773" alt="">
+                    </a>
+                  </td>
+                  <td>
+                    <h4 class="product-name"><a href="#">GitHub Bundle - Linear/Men's Small</a></h4>
+                    <p class="product-variant">Linear/Men's Small</p>
+                  </td>
+                  <td class="qty">
+                    <div>
+                      <span class="product-price">150.000 <span class="currency-symbol">VNĐ</span> <span class="mult">x</span></span> <input type="text" size="4" name="updates[41587959888]" id="updates_41587959888" value="1" onfocus="this.select();">
+                      <a href="#" onclick="remove_item(41587959888); return false;" class="btn remove btn-oldstyle">Xóa</a>
+                    </div>
+                  </td>
+                </tr> 
+                <tr class="note">
+                  <td colspan="3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ghi chú (tùy chọn)"></textarea>
+                  </td>
+                </tr>
+                <tr class="cart-update">
+                  <td colspan="3">
+                    Thay đổi sản phẩm? <a href="#" onclick="go(); return false;" class="btn btn-update btn-oldstyle">Update Cart</a>
+                  </td>
+                </tr>
+                <tr class="cart-checkout">
+                  <td colspan="3">
+                    <div>
+                      <span class="price-cart"><span class="label">Total </span>150.000</span><span class="currency-symbol"> VNĐ</span>
+                      <a href="checkout.html" onclick="go(); return true;" name="checkout" class="btn btn-checkout btn-oldstyle">Thanh toán</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+
+      <!-- Paypal -->
+      <div class="col-3 paypal">
+        <h3>Sử dụng Paypal?</h3>
+        <hr>
+        <p>Click vào nút bên dưới để thanh toán bằng Paypal.</p>
+        <button name="goto_pp" type="submit" id="paypal-express-button" class="additional-checkout-button additional-checkout-button--paypal-express" value="paypal_express" data-strategy="cart"><img alt="Checkout with: PayPal" src="http://cdn.shopify.com/s/assets/checkout/easy-checkout-btn-paypal-9835af2c2b0e2a543b2905789a7f08b678d62de2c77c1b0d16fd7689aff463f3.png"></button>
+      </div>
+      <!--End Paypal  -->
+
+    </div>
+  </div>
+  <!-- End content -->
+
+  <!-- footer -->
+  <nav class="navbar fixed-bottom">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Giới thiệu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Trợ giúp</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Chính sách</a>
+      </li>
+      <li class="nav-item facebook">
+        <a class="nav-link" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End footer -->
+
+</div>
 <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
