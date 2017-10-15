@@ -13,25 +13,26 @@
 
 
 
-var navbar = document.getElementsByClassName("navbar-toggler");
+	var navbar = document.getElementsByClassName("navbar-toggler");
 
-navbar[0].addEventListener('click', function() {
+	navbar[0].addEventListener('click', function() {
 	//some bug :(
 	if(!$(".navbar-collapse").hasClass("show")) {
-		$("#btn-cart").hide( );
-		if ($(".nav-item")[3].length) {
-			
-		}
-		else
-		{
-			
-		}
+		$("#btn-cart").hide();
 	}
 	else
 	{
-		$("#btn-cart").show( );
+		$("#btn-cart").show();
 	}
 
-	
+	document.getElementById("cart-trans").addEventListener("click", handler);
+
+	// handler function
+	function handler(e) {
+	// remove this handler
+	e.target.removeEventListener(e.type, arguments.callee);
+
+	alert("You'll only see this once!");
+}
 })
 
