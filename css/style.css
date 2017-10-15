@@ -59,6 +59,10 @@ html, body {
     font-weight: 700;
 }
 
+p {
+    font-weight: normal;
+}
+
 .container-fluid {
     position:relative;
     padding: 0;
