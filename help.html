@@ -25,7 +25,8 @@
 
 
     <div class="header">
-      <nav class="navbar navbar-expand-md fixed-top">
+      <!-- Navbar -->
+      <nav class="container content-item navbar navbar-expand-md fixed-top">
         <a class="navbar-brand" href="index.html">Dev Store</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -35,13 +36,14 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="about.html">Giới thiệu<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="help.html">Help</a>
+              <a class="nav-link" href="help.html">Trợ giúp</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link " id="btn-cart" href="#">
+              <a class="nav-link " id="btn-cart" href="cart.html">
                 <div class="cart-count">0</div>
                 <div class="cart-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</div>
               </a>
@@ -49,6 +51,7 @@
           </ul>
         </div>
       </nav>
+      <!-- End Navbar -->
     </div>
     <br><br><br>
 
@@ -56,34 +59,26 @@
     <div class="container content-about">
       <div class="row">
         <div class="col-6">
-          <h1>Help</h1>
-          <p>If you have questions, browse our <a href="#">FAQ section</a> below, check out or <a href="#">store policy</a>, or <a href="#">get in touch with</a> us if you have a specific question about your order.</p>
+          <h1>Trợ giúp</h1>
+          <p>Nếu bạn có thắc mắc gì hãy thử tìm trong <a href="#faq">phần FAQ</a> bên dưới. Nếu có thắc mắc về đơn hàng của bạn. hãy xem qua <a href="#policy">phần chính sách</a> của chúng tôi. Dev Store VN xin chân thành cảm ơn</p>
           <hr>
-          <h2>Store Policy</h2>
-          <p>We want happy customers. If your gear doesn't fit as expected, we'll be happy to exchange it for a different size. Just <a href="#">contact us </a> and we'll help you get squared away.</p>
+          <h2 id="policy">Chính sách</h2>
+          <p>Chúng tôi luôn muốn khách hàng hài lòng về sản phẩm của mình. Nếu bạn không hài lòng về kích cỡ của sản phẩm, chúng tôi sẵn sàng đổi sản phẩm với size khác cho bạn. Chỉ cần <a href="#">liên hệ</a>, chúng tôi sẽ giúp bạn ngay lập tức.</p>
           <hr>
-          <h2>FAQ</h2>
-          <p>Here, you will find answers to some of our most frequently asked questions:</p>
-          <p><b>Do you ship internationally?</b></p>
-          <p>Yes, we ship internationally. Make sure to enter your entire international address in English characters. Don't forget the Postal Code!</p>
-          <p><b>How much does shipping cost?</b></p>
-          <p>It really depends on what/how much you order. The more you buy, the higher the shipping. Shipping ranges anywhere between $3 and $$$.</p>
-          <p><b>Can I exchange an item for a different size?</b></p>
-          <p>Yes. Just ship the item back to us at:</p>
-          <p>Noonaco Fulfillment Center</p>
-          <p>c/o GitHub Shop Returns/Exchanges
+          <h2 id="faq">FAQ</h2>
+          <p>Đây là các câu hỏi thường gặp của chúng tôi:</p>
+          <p><b>Dev Store VN có ship quốc tế không?</b></p>
+          <p>Hiện tại, bọn mình chỉ giới hạn ship trong nước Việt Nam</p>
+          <p><b>Chi phí ship là bao nhiêu?</b></p>
+          <p>Nó phụ thuộc địa chỉ của bạn cũng như việc bạn order sản phẩm nào và với số lượng bao nhiêu.</p>
+          <p><b>Tôi có thể đổi sản phẩm với kích thước khác không?</b></p>
+          <p>Hoàn toàn có thể, bạn chỉ cần gửi lại sản phẩm cho chúng tôi ở đ/c:</p>
+          <p>Dev Store VN</p>
+          <p>Nội dung: Đổi trả sản phẩm
           </p>
-          <p>1789 Egbert Ave.</p>
-          <p>San Francisco, CA  94124</p>
-          <br>
-          <p>Or, for international customers outside of the Americas(North, Central, and South), please send exchanges to:</p>
-          <p>GitHub</p>
-          <p>C/O DreamLogistics, ATTN: Mattias</p>
-          <p>Bagaregatan 4</p>
-          <p>566 33 Habo</p>
-          <p>SWEDEN</p>
-          <br>
-          <p>In the package, let us know what size you want the item exchanged for and what address to ship it back to.</p>
+          <p>171 Nguyễn Tri Phương, P8, Q5.</p>
+          <p>Tp. Hồ Chí Minh, Việt Nam</p>
+          <p>Nhớ đính kèm kích cỡ sản phẩm mà bạn muốn đổi, cũng như địa chỉ mà bạn muốn nhận hàng vào kiện hàng khi gửi trả.</p>
         </div>
         <div class="col-6 package-img">
           <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0051/4802/t/83/assets/package.jpg">
@@ -92,16 +87,23 @@
     </div>
 
     <!-- footer -->
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-      <ul class="nav justify-content-center">
+    <nav class="navbar fixed-bottom">
+      <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link active" href="#">Giới thiệu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Trợ giúp</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chính sách</a>
+        </li>
+        <li class="nav-item facebook">
+          <a class="nav-link" href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+          </a>
         </li>
       </ul>
     </nav>
