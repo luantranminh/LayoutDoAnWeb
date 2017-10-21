@@ -50,12 +50,30 @@
 
 }
 */
+@media (max-width: 767px) {
+    #btn-cart {
+        visibility: hidden;
+    }
+
+
+}
+@media (min-width: 767px) {
+
+    #alis-cart {
+        visibility:hidden;
+    }
+}
 
 html, body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding:0;
     height:100%;
+    font-weight: 700;
+}
+
+p {
+    font-weight: normal;
 }
 
 .container-fluid {
@@ -64,24 +82,47 @@ html, body {
     min-height: 100%
 }
 .navbar-brand, .nav-link {
-    color: red;
+    color: #F91675;
 }
 .navbar {
- position: absolute;
- width: 80%;
- margin: 0 auto;
+   position: absolute;
+   width: 80%;
+   margin: 0 auto;
 }
 
 
 .fa-bars {
     color:#1974FF;
 }
-
+.buy{
+    position: absolute;
+    top: 330px;
+    left: 170px;
+    border-radius: 5px;
+}
 .jumbotron {
     background: url(../img/decal.jpg) no-repeat center center;
     background-size: cover;
     height: 600px; 
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
 } 
+.big_sologan {
+    font-family: Helvetica Neue, sans-serif;
+    position: absolute;
+    top: 210px;
+    left: 170px;
+    font-weight: 300;
+}
+
+.sologan {
+    position: absolute;
+    font-size: 15px;
+    top: 270px;
+    left: 170px;
+    font-weight: 100;
+}
 
 #btn-cart {
     color: #999999;
@@ -97,6 +138,8 @@ html, body {
     padding: 0;
     height: 50px;
 }
+
+
 .cart-count, .cart-text {
     padding: 1px;
 }
@@ -142,6 +185,7 @@ html, body {
 }
 */
 .content {
+    padding-top: 200px;
     padding-bottom: 150px;
     margin: 0 auto;
 }
@@ -156,7 +200,6 @@ html, body {
     padding-bottom: 100px;
 }
 .content-item {
-    width: 945px;
     margin: 0 auto;
     margin-bottom: 20px;
     padding-bottom: 100px;
@@ -182,7 +225,7 @@ html, body {
     position: absolute;
     font-size: 20px;
     top: 22px;
-    left: 92%;
+    left: 80%;
 }
 
 .content-header {
@@ -208,6 +251,8 @@ html, body {
     background-color: #28a745;
     color: #fff;
     width: 100%;
+    cursor: pointer;
+    margin: 0;
 }
 
 .extra-content {
@@ -230,19 +275,28 @@ html, body {
     border: 1px solid #ddd;
     background: #fafafa;
     border-radius: 5px 5px 0 0;
+    margin-bottom: 30px;
 }
 
+.itemcart-info {
+    margin: 0;
+    padding: 0;
+}
+
+.cart-header {
+    position: relative;
+    padding: 5px;
+}
 
 
 #cart-title {
     display: block;
-    position: relative;
     width: 380px;
-    margin: 10px 0;
-    padding-left: 10px;
+    padding: 0 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: 300;
+    margin:0;
 }
 
 .text-checkout{
@@ -255,7 +309,7 @@ html, body {
     font-size: 15px;
     float: right;
    /* letter-spacing: 0;
-    font-size: 1.17em;*/ 
+   font-size: 1.17em;*/ 
 
 }
 
@@ -263,13 +317,15 @@ html, body {
     display: block;
     position: absolute;
     top: 0px;
+    height: 100%;
     right: 0px;
     color: #666;
     font-size: 11px;
-    padding: 10px;
     border-left: 1px solid #ddd;
     cursor: pointer;
     text-decoration: none;
+    line-height: 3.5;
+    padding: 0 10px;
 }
 
 .continue:hover {
@@ -283,7 +339,6 @@ html, body {
     display: inline-block;
     margin: 0 0 10px;
     padding: 0 24px !important;
-    max-width: 100%;
     min-width: 150px !important;
     line-height: 44px !important;
     text-align: center !important;
@@ -332,14 +387,18 @@ tr {
 .remove {
     border-radius: 3px;
     border: 1px solid #d4d4d4;
-    margin-right: 10px;
     background-color: #f4f4f4;
     background-image: linear-gradient(to bottom, #f4f4f4, #ececec);
     font-size: 11px;
     font-weight: bold;
     color: inherit;
     display: inline-block;
-    padding: 3px 7px 1px;
+    padding: 3px 7px;
+}
+
+.remove:hover {
+    background: #e65146;
+    color: white;
 }
 input {
     margin: 0px 5px;
@@ -358,6 +417,7 @@ input {
     font-weight: bold;
 }
 
+
 .cart-update .btn-update {
     border-radius: 3px;
     border: 1px solid #d4d4d4;
@@ -371,12 +431,21 @@ input {
     padding: 3px 7px 1px;
 }
 
+.btn-update:hover {
+    background: #599bdc;
+    color: white;
+}
+
 .cart-checkout {
     font-size: 19px;
     position: relative;
     overflow: hidden;
     text-align: right;
     font-weight: bold;
+}
+
+.cart-checkout:hover {
+    opacity: 0.8;
 }
 
 .cart-checkout .btn-checkout {
@@ -406,6 +475,12 @@ input {
 }
 
 
+/*Thêm hiệu ứng khi hover đến sản phẩm*/
+.card:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
 /*Điều chỉnh vị trí của card-title và card-price*/
 .card-body {
     position: relative;
@@ -428,4 +503,48 @@ input {
     right: 5%;
     padding-left: 3%;
     border-left: 1px solid rgba(175,175,175,0.34);
+}
+
+.facebook {
+    position: absolute;
+    right: 0px;
+}
+
+/*style for login view*/
+.signin-container {
+    margin-top: 100px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
