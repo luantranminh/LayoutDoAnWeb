@@ -70,10 +70,12 @@ html, body {
     padding:0;
     height:100%;
     font-weight: 700;
+
 }
 
 p {
     font-weight: normal;
+    line-height: 1.5;
 }
 
 .container-fluid {
@@ -85,9 +87,9 @@ p {
     color: #F91675;
 }
 .navbar {
-   position: absolute;
-   width: 80%;
-   margin: 0 auto;
+ position: absolute;
+ width: 80%;
+ margin: 0 auto;
 }
 
 
@@ -547,4 +549,8 @@ input {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.h1 {
+    padding-bottom: 13px;
 }
